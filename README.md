@@ -3,7 +3,6 @@ step 1: implements IRetryAnalyzer
 *****************************************************
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
-
 public class Retry implements IRetryAnalyzer {
 private int retrycount =0;
 private final int maxcount=5;
@@ -22,10 +21,9 @@ SETP 2: Add on specific test paramiter
 	public void test3() {
 	Assert.assertTrue(false, "test case 3 is failed");	
 	}
-
-   
-
-3. IRetryAnalyzer using: IAnnotationTransformer
+******************************************************************
+2. IRetryAnalyzer using: IAnnotationTransformer
+*******************************************************************
 step 1: implements IRetryAnalyzer
         same as above ...
 step 2: implements IAnotationTransformer
